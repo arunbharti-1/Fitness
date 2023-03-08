@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Fitness</title>
+    <style>
+      /* css reset */
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("/gym.jpg");
+      }
+
+      .left {
+        position: absolute; /* neeche 3 step hai = relative to parent set ho jata hai iska parent header hai*/
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+      }
+
+      .left img {
+        width: 86px;
+        height: 55px;
+      }
+      .mid {
+        /*3 condition kisi ko center me karne ke liye*/
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+        font-size: 15px;
+      }
+      .right {
+        position: absolute; /* neeche 3 step hai = relative to parent set ho jata hai iska parent header hai*/
+        right: 30px;
+        top: 31px;
+        display: inline-block;
+        /* border: 2px solid yellow;  */
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 15px;
+      }
+      .navbar li a:hover,
+      .navbar li a.active {
+        text-decoration: underline;
+        color: red;
+      }
+      .btn {
+        margin: 5px 9px;
+        background-color: black;
+        color: white;
+        padding: 0px 19px;
+        border: 2px solid rgb(254, 250, 250);
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        color: red;
+        border-color: aqua;
+        background-color: black;
+      }
+
+      .container {
+        border: 2px solid gray;
+        margin: 44px 59px;
+        padding: 4px 18px;
+        width: 30%;
+        border-radius: 20px;
+      }
+
+      .formgroup input {
+        text-align: center;
+        display: block;
+        width: 344px;
+        padding: 10px;
+        border: 2px solid rgb(220, 211, 211);
+        border-radius: 10px;
+        margin: 3px auto;
+      }
+      .container button {
+        display: block;
+        width: 40%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="/logo.png" alt="" />
+        <div>Royal Fitness</div>
+      </div>
+
+      <!-- mid for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Fitness BMI</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- right for button -->
+      <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Welcome to Royal Fitness</h1>
+      <form action="noaction.php">
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Enter your age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Locality" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Contact Number" />
+        </div>
+        <div class="formgroup">
+          <input type="text" name="" placeholder="Socialmedia Handle" />
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
